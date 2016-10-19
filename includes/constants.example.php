@@ -20,6 +20,9 @@
 
     // your database's username
     define("USERNAME", "x");
-    //test
+    
+    // ldap server
+    define("LDAP_SERVER", "x");
+
 
 ?>
