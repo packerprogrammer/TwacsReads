@@ -24,7 +24,7 @@
         $ldappass = $_POST["password"];
         
         
-        $ldapconn = ldap_connect("10.6.16.200") or die("Could not connect to LDAP Server.");
+        $ldapconn = ldap_connect(LDAP_SERVER) or die("Could not connect to LDAP Server.");
         //echo 'good here';
         if ($bind = ldap_bind($ldapconn, $ldapuser,$ldappass)) {
            // remember that user's now logged in by storing user's ID in session
